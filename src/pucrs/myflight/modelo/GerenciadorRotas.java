@@ -1,6 +1,6 @@
-import java.util.ArrayList;
 package pucrs.myflight.modelo;
 
+import java.util.ArrayList;
 public class GerenciadorRotas {
     private ArrayList<Rota> rotas;
     
@@ -17,9 +17,9 @@ public class GerenciadorRotas {
     }
 
     public ArrayList<Rota> buscarPorOrigem(Aeroporto origem){
-        ArrayList<> retorno = new ArrayList<Rota>();
+        ArrayList<Rota> retorno = new ArrayList<Rota>();
         for (Rota r : rotas) {
-            if(r.getOrigem() == origem) retorno.add(origem);
+            if(r.getOrigem() == origem) retorno.add(r);
         }
         return retorno;
     }

@@ -1,5 +1,8 @@
 package pucrs.myflight.modelo;
 import java.util.ArrayList;
+import java.time.Duration;
+import java.time.LocalDateTime;
+
 public class GerenciadorVoos {
     private ArrayList<Voo> voos;
 
@@ -15,8 +18,8 @@ public class GerenciadorVoos {
         return voos;
     }
 
-    public ArrayList<Voo> buscarData(LocalDate data){
-        ArrayList<> retorno = new ArrayList<Voo>();
+    public ArrayList<Voo> buscarData(LocalDateTime data){
+        ArrayList<Voo> retorno = new ArrayList<Voo>();
         for (Voo a : voos) {
             if(a.getDatahora() == data) retorno.add(a);
         }

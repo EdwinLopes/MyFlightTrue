@@ -20,7 +20,7 @@ public class GerenciadorAeroportos {
         for (Aeroporto a : aeroportos) {
             if(a.getCodigo() == cod) return a;
         }
-        throw new Exception();
+        return null;
         }
 
 }
